@@ -64,7 +64,7 @@ public enum Level {
 ```
 现在我们去写个测试类看看，代码如下：
 ```java
-public class Test {
+public class Test01 {
     public static void main(String[] args) {
         IHello hello = new HelloProxy(new Hello());
         hello.sayHello("Doublej");
@@ -81,7 +81,7 @@ Hello Doublej
 从上面的代码我们可以看出，hello对象是被HelloProxy这个所谓的代理类所创建的。这样，如果我们以后要把日志记录的功能去掉。那我们只要把得到hello对象的代码改成以下：
 
 ```java
-public class Test {
+public class Test01 {
     public static void main(String[] args) {
         IHello hello = new Hello();
         hello.sayHello("Doublej");
@@ -171,7 +171,7 @@ public class DynaProxyHello implements InvocationHandler {
 上面类中出现的Logger类和Level枚举还是和上一上例子的实现是一样的，这里就不贴出代码了。
 ```java
 
-public class Test {
+public class Test01 {
     public static void main(String[] args) {
         IHello hello = (IHello)new DynaProxyHello().bind(new Hello());
         hello.sayGoogBye("Double J");
@@ -286,7 +286,7 @@ public class DynaProxyHello implements InvocationHandler {
 
 然后我们把Test.java中的代码改一下，测试一下：
 ```java
-public class Test {
+public class Test01 {
     public static void main(String[] args) {
         IHello hello = (IHello)new DynaProxyHello().bind(new Hello(),new LoggerOperation());
         hello.sayGoogBye("Double J");
