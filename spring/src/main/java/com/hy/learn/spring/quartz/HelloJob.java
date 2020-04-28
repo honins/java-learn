@@ -1,7 +1,6 @@
-package com.hy.learn.base.quartz;
+package com.hy.learn.spring.quartz;
 
 import org.quartz.Job;
-import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 

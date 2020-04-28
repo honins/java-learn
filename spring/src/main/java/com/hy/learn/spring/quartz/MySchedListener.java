@@ -1,4 +1,4 @@
-package com.hy.learn.base.quartz;
+package com.hy.learn.spring.quartz;
 
 import org.quartz.*;
 
