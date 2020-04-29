@@ -1,7 +1,5 @@
 package com.hy.learn.base.rxjava;
 
-import io.reactivex.rxjava3.core.Flowable;
-
 import java.util.ArrayList;
 
 /**
@@ -10,11 +8,11 @@ import java.util.ArrayList;
  */
 public class Demo {
 
-    public static void main(String[] args) {
-        Flowable.just("Hello world").subscribe(System.out::println);
-        Flowable.just("hy").subscribe(toUser -> sayHello(toUser));
-        Flowable.just(1,2).subscribe(Demo::add);
-    }
+//    public static void main(String[] args) {
+//        Flowable.just("Hello world").subscribe(System.out::println);
+//        Flowable.just("hy").subscribe(toUser -> sayHello(toUser));
+//        Flowable.just(1,2).subscribe(Demo::add);
+//    }
 
     private static void add(Integer integer) {
         int sum = 0;
