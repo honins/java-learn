@@ -3,4 +3,4 @@ spring:
     lazy-initialization: true
 condition:
   rand:
-    type: int
+    type: boolean

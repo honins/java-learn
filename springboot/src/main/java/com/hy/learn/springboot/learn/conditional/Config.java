@@ -36,13 +36,13 @@ public class Config {
         });
     }
 
-//    @Bean
-//    @Conditional(RandBooleanCondition.class)
-//    public RandDataComponent<Boolean> randBooleanComponent() {
-//        return new RandDataComponent<>(() -> {
-//            Random random = new Random();
-//            return random.nextBoolean();
-//        });
-//    }
+    @Bean
+    @Conditional(RandBooleanCondition.class)
+    public RandDataComponent<Boolean> randBooleanComponent() {
+        return new RandDataComponent<>(() -> {
+            Random random = new Random();
+            return random.nextBoolean();
+        });
+    }
 
 }
