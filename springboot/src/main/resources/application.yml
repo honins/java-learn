@@ -1,3 +1,6 @@
 spring:
   main:
     lazy-initialization: true
+condition:
+  rand:
+    type: int
