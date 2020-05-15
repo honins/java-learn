@@ -12,6 +12,6 @@ public class HelloJob implements Job {
 
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-        System.out.println(">>>>>>>>>say hello!");
+        System.out.println("hello:"+jobExecutionContext.getJobDetail().getKey());
     }
 }

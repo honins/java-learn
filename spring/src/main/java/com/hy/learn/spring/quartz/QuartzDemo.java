@@ -1,4 +1,4 @@
-package com.hy.learn.spring;
+package com.hy.learn.spring.quartz;
 
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
