@@ -11,7 +11,6 @@ import lombok.experimental.SuperBuilder;
  */
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @SuperBuilder
 public class DoctorAndAsstBaseDTO extends DoctorBaseDTO {
 }

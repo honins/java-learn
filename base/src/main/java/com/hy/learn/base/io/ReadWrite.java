@@ -13,9 +13,8 @@ public class ReadWrite {
     public static void readFileContent(String filePath) throws IOException {
         FileReader fileReader = new FileReader(filePath);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
-
         String line;
-        while ((line = bufferedReader.readLine())!= null){
+        while ((line = bufferedReader.readLine()) != null) {
             System.out.println(line);
         }
         bufferedReader.close();
