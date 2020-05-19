@@ -15,7 +15,7 @@ import java.util.Set;
  * @author Created by hy
  * @date on 2020/5/18 16:57
  */
-public class NIOService {
+public class NIOSocketService {
 
     public static void main(String[] args) throws IOException {
         Selector selector = Selector.open();

@@ -8,7 +8,7 @@ import java.net.Socket;
  * @author Created by hy
  * @date on 2020/5/18 17:52
  */
-public class NIOClient {
+public class NIOSocketClient {
 
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("127.0.0.1", 8888);
