@@ -1,3 +1,12 @@
+import com.google.common.collect.Lists;
+import com.hy.learn.base.demo.Demo;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 /**
  * @author Created by hy
  * @date on 2019/12/19 10:36
@@ -26,4 +35,10 @@ public class Test {
         }
     }
 
+    @org.junit.Test
+    public void test(){
+        ArrayList<Integer> ids = Lists.newArrayList(1, 2, 3, 4, 5);
+        ids.stream().collect(Collectors.toMap(t -> t,id->id));
+        System.out.println(ids.toString());
+    }
 }
