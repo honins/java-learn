@@ -19,23 +19,21 @@ public class NIOSocketService {
 
     public static void main(String[] args) throws IOException {
         Selector selector = Selector.open();
-
         ServerSocketChannel socketChannel = ServerSocketChannel.open();
         socketChannel.configureBlocking(false);
-        socketChannel.register(selector, SelectionKey.OP_ACCEPT);
-
         ServerSocket serverSocket = socketChannel.socket();
         InetSocketAddress socketAddress = new InetSocketAddress("127.0.0.1", 8888);
         serverSocket.bind(socketAddress);
+        socketChannel.register(selector, SelectionKey.OP_ACCEPT);
 
         while (true) {
             selector.select();
             Set<SelectionKey> keys = selector.selectedKeys();
             Iterator<SelectionKey> keyIterator = keys.iterator();
-
             while (keyIterator.hasNext()) {
                 SelectionKey selectionKey = keyIterator.next();
                 if (selectionKey.isAcceptable()) {
+                    System.out.println("收到连接请求");
                     ServerSocketChannel serverSocketChannel = (ServerSocketChannel) selectionKey.channel();
                     // 服务器会为每个新连接创建一个 SocketChannel
                     SocketChannel sChannel = serverSocketChannel.accept();

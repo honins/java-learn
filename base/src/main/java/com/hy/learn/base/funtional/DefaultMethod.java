@@ -8,6 +8,9 @@ import java.util.Comparator;
  */
 public class DefaultMethod {
 
+    public void comparator(Comparator<Apple> appleComparator) {
+    }
+
     public void comparator() {
         Apple apple1 = new Apple();
         Apple apple2 = new Apple();
@@ -15,6 +18,7 @@ public class DefaultMethod {
 
         Comparator<Apple> byWeight = (o1, o2) -> o1.getWeight() - o2.getWeight();
         int compare = byWeight.compare(apple1, apple2);
+        comparator((a1, a2) -> a1.getWeight() - a2.getWeight());
     }
 
 }
