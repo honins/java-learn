@@ -9,15 +9,7 @@ import org.testng.annotations.Test;
  * @author Created by hy
  * @date on 2021/2/23 14:50
  */
-public class GenericGroovyApplicationContextTest {
-
-    @Test
-    public void getBeanByGroovy(){
-        GenericGroovyApplicationContext context = new GenericGroovyApplicationContext("classpath:com/hy/learn/spring/ioc/groovy-beans.groovy");
-        User user = context.getBean("user", User.class);
-        Assert.assertNotNull(user);
-
-    }
+public class ApplicationContextTest {
 
     @Test
     public void getBean(){
