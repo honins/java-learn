@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface IHello {
+sayHello()
+}
+
+class HelloImpl {
+sayHello()
+}
+
+class HelloProxy {
+- HelloImpl HelloImpl;
+
++ HelloProxy(helloImpl:HelloImpl);
++ sayHello();
+}
+
+IHello <|-- HelloImpl
+IHello <|-- HelloProxy
+
+interface InvocationHandler {
+invoke(Object proxy, Method method, Object[] args);
+}
+
+class DynamicProxyHello {
+
+}
+
+@enduml

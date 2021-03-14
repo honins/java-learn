@@ -1,11 +1,6 @@
 import com.google.common.collect.Lists;
-import com.hy.learn.base.base.DrugOrderOpenInfoDTO;
-import com.hy.learn.base.demo.Demo;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -14,32 +9,31 @@ import java.util.stream.Collectors;
  */
 public class Test {
 
-//    What does $$ in javac generated name mean?
+    //    What does $$ in javac generated name mean?
 //    https://stackoverflow.com/questions/36057007/what-does-in-javac-generated-name-mean
     public static void main(String... args) {
-        if(args.length==0) {
-            final boolean meFirst = Math.random()<0.5;
-            if(meFirst) {
-                Runnable r=Test::main;
-                System.out.println("first run:\t"+r.getClass());
+        if (args.length == 0) {
+            final boolean meFirst = Math.random() < 0.5;
+            if (meFirst) {
+                Runnable r = Test::main;
+                System.out.println("first run:\t" + r.getClass());
             }
             main("second run");
-            if(!meFirst) {
-                Runnable r=Test::main;
-                System.out.println("first run:\t"+r.getClass());
+            if (!meFirst) {
+                Runnable r = Test::main;
+                System.out.println("first run:\t" + r.getClass());
             }
-        }
-        else {
-            Runnable r=Test::main;
-            System.out.println(args[0]+":\t"+r.getClass());
-            if(args[0].equals("second run")) main("last run");
+        } else {
+            Runnable r = Test::main;
+            System.out.println(args[0] + ":\t" + r.getClass());
+            if (args[0].equals("second run")) main("last run");
         }
     }
 
     @org.junit.Test
-    public void test(){
+    public void test() {
         ArrayList<Integer> ids = Lists.newArrayList(1, 2, 3, 4, 5);
-        ids.stream().collect(Collectors.toMap(t -> t,id->id));
+        ids.stream().collect(Collectors.toMap(t -> t, id -> id));
         System.out.println(ids.toString());
     }
 }

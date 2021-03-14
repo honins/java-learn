@@ -12,7 +12,7 @@ public class DynamicProxyHello implements InvocationHandler {
 
     private Object delegate;
 
-    public Object bind(Object delegate){
+    public Object bind(Object delegate) {
         this.delegate = delegate;
         return Proxy.newProxyInstance(this.delegate.getClass().getClassLoader(),
                 this.delegate.getClass().getInterfaces(), this);
