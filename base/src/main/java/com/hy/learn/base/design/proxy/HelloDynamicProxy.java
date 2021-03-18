@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
  * @author Created by hy
  * @date on 2019/11/8 18:09
  */
-public class DynamicProxyHello implements InvocationHandler {
+public class HelloDynamicProxy implements InvocationHandler {
 
     private Object delegate;
 

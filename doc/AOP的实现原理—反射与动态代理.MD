@@ -1,7 +1,12 @@
 # AOP的实现原理—反射与动态代理
 [AOP的实现原理—反射与动态代理](https://blog.csdn.net/fuzhongmin05/article/details/61615149)
 
-写的挺好，挺有用
+JDK中 没有sun包下的源码，我们可以通过下载OpenJDK的源码来查看
+
+下载地址：http://hg.openjdk.java.net
+
+找到对应的jdk版本，比如jdk8 http://hg.openjdk.java.net/jdk8/jdk8/jdk/
+然后 IDEA -> Project Structure -> SDKs -> SourcePath -> 选择下载的zip，下载源码；
 
 其实AOP的意思就是面向切面编程。OO注重的是我们解决问题的方法(封装成Method)，而AOP注重的是解决许多问题的方法中的共同点，是对OO思想的一种补充！还是拿人家经常举的一个例子讲解一下吧：比如说，我们现在要开发的一个应用里面有很多的业务方法，但是，我们现在要对这个方法的执行做全面监控,或部分监控。也许我们就会在要一些方法前去加上一条日志记录，我们写个例子看看我们最简单的解决方案。
 
