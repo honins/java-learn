@@ -18,14 +18,21 @@
 # 思路：
 ## 1. replace()
 在思考这道题时，脑海中总是会出现String.replace()
-```
-replace(CharSequence target, CharSequence replacement)
-```
+
 忍不住看了下评论，果然有很多人说这个方法
 
 ## 2. 遍历字符串
 先遍历字符串，根据空格数计算新字符串的长度。
 然后遍历字符串，添加 `%20`
+
+## 解题 
+
+1. 
+```
+replace(CharSequence target, CharSequence replacement)
+```
+
+2.
 ```java
 class Solution {
     public String replaceSpace(String s) {
