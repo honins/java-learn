@@ -7,8 +7,19 @@ package com.hy.learn.base.concurrent;
 public class MyThread extends Thread {
 
     @Override
-    public void run(){
-        System.out.println("run");
+    public void run() {
+        super.run();
+        System.out.println(Thread.currentThread().getName());
+        System.out.println("aaaaaaaaa");
     }
 
+    public static void main(String[] args) {
+        MyThread myThread = new MyThread();
+        myThread.start();
+
+        new Thread(() -> {
+            System.out.println(Thread.currentThread().getName());
+            System.out.println("lambda");
+        }).start();
+    }
 }
