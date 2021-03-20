@@ -69,3 +69,19 @@ class Solution {
 然后我试了下，发现listNode 居然还是原始对象。
 看来是我弄错了
 
+于是开始调试，一看究竟
+
+![image](https://user-images.githubusercontent.com/23189048/111874188-ffa1e380-89ce-11eb-98f6-bb54413fe57b.png)
+![image](https://user-images.githubusercontent.com/23189048/111874189-03356a80-89cf-11eb-881a-c6b7ce633a89.png)
+
+这时 listNode 和 head地址都是 @527
+
+运行过一次head = head.next 后
+
+![image](https://user-images.githubusercontent.com/23189048/111874226-26f8b080-89cf-11eb-8184-466b43a518fe.png)
+
+listNode还是@527 head是528
+
+可见listNode是不变的
+
+这也说明java是值传递。 地址是以值的形式复制过来的
