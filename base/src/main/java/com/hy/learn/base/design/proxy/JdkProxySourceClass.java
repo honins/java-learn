@@ -1,6 +1,5 @@
 package com.hy.learn.base.design.proxy;
 
-import com.hy.learn.base.design.proxy.impl.Hello;
 import sun.misc.ProxyGenerator;
 
 import java.io.FileNotFoundException;
@@ -14,7 +13,7 @@ import java.io.IOException;
 public class JdkProxySourceClass {
 
     public static void writeClassToDisk(String path) {
-        byte[] classFile = ProxyGenerator.generateProxyClass("$proxy1", new Class[]{Hello.class});
+        byte[] classFile = ProxyGenerator.generateProxyClass("$proxy1", new Class[]{IHello.class});
 
         FileOutputStream fos = null;
 
@@ -26,8 +25,8 @@ public class JdkProxySourceClass {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            if (fos != null){
+        } finally {
+            if (fos != null) {
                 try {
                     fos.close();
                 } catch (IOException e) {
