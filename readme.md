@@ -15,7 +15,7 @@
 
 
 整体需要完成的，**第一阶段做完前5个**：
-1. 读完《深入理解java web技术内幕》 **3月-28日前读完**
+1. 读完《深入理解java web技术内幕》 **4月5日前读完**
 2. 学习基本 常见的数据结构和算法 **剑指offer每天一题**
 3. 看完 [JavaGuide](https://github.com/Snailclimb/JavaGuide)，看完 [CS-Notes](https://github.com/CyC2018/CS-Notes)
 4. 学习多线程
