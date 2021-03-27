@@ -11,7 +11,7 @@
 每天都要做的：
 1. 阅读《深入理解java web技术内幕》
 2. **剑指offer每天一题** ，配合极客时间补充基础知识
-3. [JavaGuide](https://github.com/Snailclimb/JavaGuide) 看完 [CS-Notes](https://github.com/CyC2018/CS-Notes) 一个章节
+3. 看完 [JavaGuide](https://github.com/Snailclimb/JavaGuide) [CS-Notes](https://github.com/CyC2018/CS-Notes) 一个章节
 
 
 整体需要完成的，**第一阶段做完前5个**：
