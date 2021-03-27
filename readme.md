@@ -8,11 +8,18 @@
  - doc：一些有价值的文章；
 
 # 目前学习路线
+每天都要做的：
+1. 阅读《深入理解java web技术内幕》
+2. **剑指offer每天一题** ，配合极客时间补充基础知识
+3. [JavaGuide](https://github.com/Snailclimb/JavaGuide) 看完 [CS-Notes](https://github.com/CyC2018/CS-Notes) 一个章节
+
+
+整体需要完成的，**第一阶段做完前5个**：
 1. 读完《深入理解java web技术内幕》 **3月-28日前读完**
-2. 看完spring5源码
-3. 看完 [CS-Notes](https://github.com/CyC2018/CS-Notes) [JavaGuide](https://github.com/Snailclimb/JavaGuide)
+2. 学习基本 常见的数据结构和算法 **剑指offer每天一题**
+3. 看完 [JavaGuide](https://github.com/Snailclimb/JavaGuide)，看完 [CS-Notes](https://github.com/CyC2018/CS-Notes)
 4. 学习多线程
-5. 学习基本 常见的数据结构和算法 **剑指offer每天一题**
+5. 看完spring5源码
 6. 读完JavaOn8
 7. 读完《深入理解jvm虚拟机》第三版
 8. redis
