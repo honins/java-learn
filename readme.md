@@ -10,7 +10,7 @@
 # 目前学习路线
 1. 读完《深入理解java web技术内幕》 **3月-28日前读完**
 2. 看完spring5源码
-3. 看完 [CS-Notes](https://github.com/CyC2018/CS-Notes)
+3. 看完 [CS-Notes](https://github.com/CyC2018/CS-Notes) [JavaGuide](https://github.com/Snailclimb/JavaGuide)
 4. 学习多线程
 5. 学习基本 常见的数据结构和算法 **剑指offer每天一题**
 6. 读完JavaOn8
