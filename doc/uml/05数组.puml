@@ -1,0 +1,14 @@
+@startmindmap
+
+* 数组
+** 线性表数据结构
+*** 线性表就是数据排成像一条线一样的结构,每个数据只有最多前后2个方向
+** 连续内存和相同类型的数据
+*** 随机访问
+**** 因为是连续内存，所以当需要随机访问某个元素时可通过公式a[i]_address = base_address + i * data_type_size得出
+** 数组支持随机访问，根据**下标随机访问**的时间复杂度为 O(1),不能笼统的说查找的时间复杂度是O(1)
+** 数组下标为什么从0开始？
+*** 下标准确的定义应该是**偏移**,a[k]的内存地址只需要用这个公式：a[k]_address = base_address + k * type_size
+** 二维数组
+*** 对于m * n的数组，a[i][j](i<m,j<n),address = base_address + (i*n+j) * type_size
+@endmindmap
