@@ -84,28 +84,34 @@ public class Num07 {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         public TreeNode buildTree(int[] preorder, int[] inorder) {
+            int n = preorder.length;
             for (int i = 0;i < inorder.length; i++){
                 map.put(inorder[i], i);
             }
-
-            innerBuildTree(preorder, inorder ,0,);
-
+            return innerBuildTree(preorder, inorder ,0,n-1,0,n-1);
         }
 
-        private void innerBuildTree(int[] preorder, int[] inorder ,int preorder_left, int preorder_right, int inorder_left, int inorder_right) {
-            TreeNode rootNode = new TreeNode(preorder[preorder_left]);
+        private TreeNode innerBuildTree(int[] preorder, int[] inorder ,int preorder_left, int preorder_right, int inorder_left, int inorder_right) {
 
-            //中序遍历中的找到根节点的位置
-            Integer inorder_root = map.get(rootNode.val);
+            if (preorder_left > preorder_right){
+                return null;
+            }
+
+            int preorder_root = preorder_left;
+            Integer inorder_root = map.get(preorder[preorder_root]);
+
+            TreeNode rootNode = new TreeNode(preorder[preorder_root]);
 
             //得到左子树节点的数目
-            int size_left_subtree = inorder_root - preorder_left;
+            int size_left_subtree = inorder_root - inorder_left;
 
-            //得到右子树节点的数目
-            int size_right_subtree = inorder_left - preorder_left;
+            //递归建造左子树
+            rootNode.left = innerBuildTree(preorder, inorder, preorder_left + 1, preorder_left + size_left_subtree , inorder_left, inorder_root - 1);
 
+            //递归建造右子树
+            rootNode.right = innerBuildTree(preorder, inorder, preorder_left + size_left_subtree + 1, preorder_right, inorder_root + 1, inorder_right);
 
-            //根节点是 rootIndex + 1
+            return rootNode;
         }
     }
 
