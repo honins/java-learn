@@ -42,6 +42,7 @@ public class MyQueueByLink {
             if (count == capacity){
                 return false;
             }
+            //由于我定义的这个队列里固定了长度不允许无限长度的队列，所以做了一位操作
             //将head直接赋值为队列
             queue = head;
             //补充完整长度的队列
