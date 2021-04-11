@@ -39,6 +39,7 @@ public class MyQueueByList {
 //            head = 0;
 //            items[tail] = item;
 //            tail++;
+            //tail已到数组尾部，移动队列
             //比注释部分实现更加优雅
             for (int i = head; i < tail; i++) {
                 items[i - head] = items[i];

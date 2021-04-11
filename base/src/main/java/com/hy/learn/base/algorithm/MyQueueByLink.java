@@ -21,6 +21,7 @@ public class MyQueueByLink {
 
     private Node tail;
 
+    //表示当前队列
     private Node queue;
 
     public MyQueueByLink(int capacity) {
@@ -36,12 +37,14 @@ public class MyQueueByLink {
     }
 
     public boolean enqueue(Object item) {
+        //尾部已无下一个节点
         if (tail.next == null){
             if (count == capacity){
                 return false;
             }
-
+            //将head直接赋值为队列
             queue = head;
+            //补充完整长度的队列
             for (int i = 0; i< capacity - count; i++){
                 tail.next = new Node();
             }
