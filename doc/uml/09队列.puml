@@ -1,0 +1,11 @@
+@startmindmap
+
+* 队列（queue）
+** 先进先出，是一种操作受限的线性表数据结构
+** 入队enqueue:向队列尾部放入数据 出队dequeue:从队列头部取出数据
+** 顺序队列和链式队列
+
+
+
+
+@endmindmap
