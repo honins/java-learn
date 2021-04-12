@@ -5,10 +5,10 @@ import java.util.LinkedList;
 /**
  * @author home-pc
  * @program: java-learn
- * @description:
+ * @description: 两个栈实现队列
  * @date 2021-04-11 20:51:43
  */
-public class Num08 {
+public class Num09 {
 
     static class CQueue {
 
@@ -37,6 +37,24 @@ public class Num08 {
                 return reverseStack.pop();
             }
             return reverseStack.pop();
+        }
+
+        public int fib(int n) {
+
+            if(n <=1){
+                return n;
+            }
+
+            int a = 0;
+            int b = 1;
+            int sum = 0;
+            for (int i = 2; i < n; i++) {
+                sum = (a + b)%1000000007;
+                a = b;
+                b = sum;
+            }
+
+            return sum;
         }
     }
 
