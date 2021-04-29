@@ -9,6 +9,8 @@ public class Geek15 {
     //这节课主要讲的二分查找的问题
 
     /**
+     * 最基础版的二分查找
+     *
      * @param a     待查找数组，数组有序且无重复值
      * @param n     数组长度
      * @param value 待查找的值
