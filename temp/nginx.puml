@@ -1,0 +1,23 @@
+@startuml
+(*)  --> "前端请求"
+--> "nginx"
+If "负载均衡" then
+--> "旧版本服务"
+-->(*)
+ELSE
+--> "新版本服务"
+-->(*)
+Endif
+@enduml
+
+@startuml
+(*)  --> "前端请求"
+--> "nginx"
+If "自定义条件" then
+--> "旧版本服务"
+-->(*)
+ELSE
+--> "新版本服务"
+-->(*)
+Endif
+@enduml
