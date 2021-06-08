@@ -3,7 +3,7 @@ package com.hy.learn.base.algorithm;
 /**
  * @author home-pc
  * @program: java-learn
- * @description: 手写队列，使用数组实现
+ * @description: 手写队列，使用队列实现
  * @date 2021-04-11 13:38:27
  */
 public class MyQueueByLink {
